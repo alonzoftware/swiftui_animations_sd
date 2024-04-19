@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var startAnimation = false
     @State private var scaleInOut = false
     @State private var rotateInOut = false
     @State private var moveInOut = false
@@ -57,11 +58,12 @@ struct ContentView: View {
             }//MARK: ZStack2
             .rotationEffect(.degrees(rotateInOut ? 90 : 0))
                 .scaleEffect(scaleInOut ? 1 : 1/4)
-                .animation(Animation.easeInOut.repeatForever(autoreverses: true).speed(1/8), value: scaleInOut)
+                .animation(Animation.easeInOut.repeatForever(autoreverses: true).speed(1/8), value: startAnimation)
                 .onAppear {
                     moveInOut.toggle()
                     scaleInOut.toggle()
                     rotateInOut.toggle()
+                    startAnimation.toggle()
                 }
         }//MARK: ZStack1
         .preferredColorScheme(.dark)
