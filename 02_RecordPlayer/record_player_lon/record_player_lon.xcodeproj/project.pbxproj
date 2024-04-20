@@ -13,6 +13,9 @@
 		264B659F2BD1BF72002F79E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264B659E2BD1BF72002F79E9 /* Preview Assets.xcassets */; };
 		264B65A62BD1C035002F79E9 /* music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 264B65A52BD1C035002F79E9 /* music.m4a */; };
 		264B65A92BD1C279002F79E9 /* RecordPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264B65A82BD1C279002F79E9 /* RecordPlayerView.swift */; };
+		D0B0DE9F2BD4279D0014E27B /* ArmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0DE9E2BD4279D0014E27B /* ArmView.swift */; };
+		D0B0DEA12BD429500014E27B /* RecordPlayerBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0DEA02BD429500014E27B /* RecordPlayerBox.swift */; };
+		D0B0DEA32BD4430E0014E27B /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0DEA22BD4430E0014E27B /* PlaySound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		264B659E2BD1BF72002F79E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		264B65A52BD1C035002F79E9 /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = music.m4a; path = ../../Resources/music.m4a; sourceTree = "<group>"; };
 		264B65A82BD1C279002F79E9 /* RecordPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerView.swift; sourceTree = "<group>"; };
+		D0B0DE9E2BD4279D0014E27B /* ArmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmView.swift; sourceTree = "<group>"; };
+		D0B0DEA02BD429500014E27B /* RecordPlayerBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerBox.swift; sourceTree = "<group>"; };
+		D0B0DEA22BD4430E0014E27B /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 				264B659B2BD1BF72002F79E9 /* Assets.xcassets */,
 				264B659D2BD1BF72002F79E9 /* Preview Content */,
 				264B65A82BD1C279002F79E9 /* RecordPlayerView.swift */,
+				D0B0DE9E2BD4279D0014E27B /* ArmView.swift */,
+				D0B0DEA02BD429500014E27B /* RecordPlayerBox.swift */,
+				D0B0DEA22BD4430E0014E27B /* PlaySound.swift */,
 			);
 			path = record_player_lon;
 			sourceTree = "<group>";
@@ -145,8 +154,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				264B65A92BD1C279002F79E9 /* RecordPlayerView.swift in Sources */,
+				D0B0DEA32BD4430E0014E27B /* PlaySound.swift in Sources */,
 				264B659A2BD1BF6F002F79E9 /* ContentView.swift in Sources */,
 				264B65982BD1BF6F002F79E9 /* record_player_lonApp.swift in Sources */,
+				D0B0DEA12BD429500014E27B /* RecordPlayerBox.swift in Sources */,
+				D0B0DE9F2BD4279D0014E27B /* ArmView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
