@@ -18,7 +18,9 @@ struct ContentView: View {
             Rectangle()
                 .edgesIgnoringSafeArea(.all)
                 .foregroundColor(.black)
-            ZStack {//MARK: ZStack2
+            
+            //MARK: ZStack2
+            ZStack {
                 
                 //MARK: - CIRCLES SET 1
                 ZStack {
@@ -29,7 +31,8 @@ struct ContentView: View {
                     Circle().fill(LinearGradient(gradient: Gradient(colors:[.purple, .white]), startPoint: .bottom, endPoint: .top))
                         .frame(width: 120, height: 120)
                         .offset(y: moveInOut ? 60 : 0)
-                }.opacity(0.5)
+                }
+                .opacity(0.5)
                 
                 //MARK: - CIRCLES SET 2
                 ZStack {
@@ -40,8 +43,9 @@ struct ContentView: View {
                     Circle().fill(LinearGradient(gradient: Gradient(colors:[.purple, .white]), startPoint: .bottom, endPoint: .top))
                         .frame(width: 120, height: 120)
                         .offset(y: moveInOut ? 60 : 0)
-                }.opacity(0.5)
-                    .rotationEffect(.degrees(60))
+                }
+                .opacity(0.5)
+                .rotationEffect(.degrees(60))
                 
                 //MARK: - CIRCLES SET 3
                 ZStack {
@@ -52,19 +56,20 @@ struct ContentView: View {
                     Circle().fill(LinearGradient(gradient: Gradient(colors:[.purple, .white]), startPoint: .bottom, endPoint: .top))
                         .frame(width: 120, height: 120)
                         .offset(y: moveInOut ? 60 : 0)
-                }.opacity(0.5)
-                    .rotationEffect(.degrees(120))
+                }
+                .opacity(0.5)
+                .rotationEffect(.degrees(120))
                 
             }//MARK: ZStack2
             .rotationEffect(.degrees(rotateInOut ? 90 : 0))
-                .scaleEffect(scaleInOut ? 1 : 1/4)
-                .animation(Animation.easeInOut.repeatForever(autoreverses: true).speed(1/8), value: startAnimation)
-                .onAppear {
-                    moveInOut.toggle()
-                    scaleInOut.toggle()
-                    rotateInOut.toggle()
-                    startAnimation.toggle()
-                }
+            //                .scaleEffect(scaleInOut ? 1 : 1/4)
+            .animation(Animation.easeInOut.repeatForever(autoreverses: true).speed(1/8), value: startAnimation)
+            .onAppear {
+                moveInOut.toggle()
+                scaleInOut.toggle()
+                rotateInOut.toggle()
+                startAnimation.toggle()
+            }
         }//MARK: ZStack1
         .preferredColorScheme(.dark)
     }
